@@ -7,47 +7,56 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewScore"
-        android:layout_width="263dp"
-        android:layout_height="55dp"
-        android:text="@string/score"
-        app:autoSizeTextType="uniform"
+        android:id="@+id/textViewScoreR"
+        android:layout_width="95dp"
+        android:layout_height="68dp"
+        android:text="@string/score_r"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.523" />
 
-    <Button
-        android:id="@+id/buttonSub"
-        android:layout_width="93dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="72dp"
-        android:text="@string/take"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSave"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="@string/reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
-        app:layout_constraintStart_toEndOf="@+id/buttonSub" />
-
-    <Button
-        android:id="@+id/buttonAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="72dp"
-        android:text="@string/add"
+    <TextView
+        android:id="@+id/textViewScoreB"
+        android:layout_width="95dp"
+        android:layout_height="68dp"
+        android:text="@string/score_b"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonSave" />
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/buttonBlue"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRed"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        app:layout_constraintStart_toEndOf="@+id/buttonReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
