@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ScoreAppP1</string>
+    <string name="score">Score: %1$d</string>
+    <string name="add">Score</string>
+    <string name="take">Steal</string>
+    <string name="reset">Reset</string>
+</resources>
